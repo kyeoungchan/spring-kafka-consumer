@@ -10,10 +10,10 @@ import org.springframework.kafka.annotation.TopicPartition;
 
 @Slf4j
 @SpringBootApplication
-public class SpringConsumerApplication {
+public class RecordListenerSpringConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication application = new SpringApplication(SpringConsumerApplication.class);
+        SpringApplication application = new SpringApplication(RecordListenerSpringConsumerApplication.class);
         application.run(args);
     }
 
