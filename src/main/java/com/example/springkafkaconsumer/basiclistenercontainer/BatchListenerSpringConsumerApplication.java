@@ -28,7 +28,7 @@ public class BatchListenerSpringConsumerApplication {
     /**
      * 메시지 값들을 List 자료구조로 받아서 처리한다.
      */
-    @KafkaListener(topics = "test", groupId = "test-group02")
+    @KafkaListener(topics = "test", groupId = "test-group-02")
     public void listBatchListener(List<String> list) {
         list.forEach(recordValue -> log.info("listBatchListener record: {}", recordValue));
     }

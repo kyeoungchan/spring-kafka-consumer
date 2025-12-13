@@ -31,7 +31,7 @@ public class RecordListenerSpringConsumerApplication {
      * 메시지 값을 파라미터로 받는 메서드
      * 스프링 카프카의 역직렬화 클래스 기본값인 StringDeserializer를 사용했으므로 String 클래스로 메시지 값을 받았다.
      */
-    @KafkaListener(topics = "test", groupId = "test-group01")
+    @KafkaListener(topics = "test", groupId = "test-group-01")
     public void singleTopicListener(String messageValue) {
         log.info(messageValue);
     }
