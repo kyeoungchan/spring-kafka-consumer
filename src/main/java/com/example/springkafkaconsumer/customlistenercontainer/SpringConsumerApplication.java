@@ -14,6 +14,7 @@ public class SpringConsumerApplication {
 
     @KafkaListener(topics = "test",
             groupId = "test-group",
+            // 빈 객체로 등록한 이름인 customContainerFactory로 설정한다.
             containerFactory = "customContainerFactory")
     public void customListener(String data) {
         log.info("data: {}", data);
