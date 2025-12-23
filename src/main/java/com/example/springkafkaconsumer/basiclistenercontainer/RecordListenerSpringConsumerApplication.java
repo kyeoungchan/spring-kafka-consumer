@@ -51,7 +51,7 @@ public class RecordListenerSpringConsumerApplication {
 
     /**
      * 2개 이상의 카프카 컨슈머 스레드를 실행하고 싶다면 concurrency 옵션을 사용하면 된다.
-     * concurrency 옵션값에 해당하는 만큼 컨슈머 스레들르 만들어서 병렬처리한다.
+     * concurrency 옵션값에 해당하는 만큼 컨슈머 스레드를 만들어서 병렬처리한다.
      */
     @KafkaListener(topics = "test",
             groupId = "test-group-03",
